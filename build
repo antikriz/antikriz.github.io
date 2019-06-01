@@ -1,0 +1,7 @@
+rm -rf _site/*
+bundle exec jekyll build
+pushd _site
+git add .
+git commit --amend -m "init"
+git push -f origin master
+popd
