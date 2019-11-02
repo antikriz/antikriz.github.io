@@ -1,4 +1,7 @@
 rm -rf _site/*
+pushd _site
+git pull origin master
+popd
 bundle exec jekyll build
 pushd _site
 git add .
