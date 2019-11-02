@@ -1,0 +1,3 @@
+#!/bin/sh
+ssh-add -K ~/.ssh/antik-gh
+git push

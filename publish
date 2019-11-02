@@ -1,7 +1,9 @@
+#!/bin/sh
 rm -rf _site/*
 bundle exec jekyll build
 pushd _site
 git add .
 git commit -m "no-comment"
-git push -f origin master
+#git push -f origin master
+git push origin master
 popd
